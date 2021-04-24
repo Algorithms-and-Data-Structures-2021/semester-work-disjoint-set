@@ -37,8 +37,9 @@ int main(int argc, char **argv) {
   ss >> number;  // number = 2
 
   // работа с набором данных
+  const auto path1 = string(kProjectPath);
   const auto path = string(kDatasetPath);
-  cout << "Path to the 'dataset/' folder: " << path << endl;
+  cout << "Path to the 'dataset/' folder: " << path1 << endl;
 
   auto input_file = ifstream(path + "/dataset-example.csv");
 
